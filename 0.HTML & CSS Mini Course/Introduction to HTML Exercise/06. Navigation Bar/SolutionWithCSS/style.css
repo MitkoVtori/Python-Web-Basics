@@ -1,0 +1,24 @@
+html {
+    background-color: black;
+}
+
+.Navigation-bar {
+    margin: 0;
+    background: #9012FF;
+}
+
+button {
+    border: none;
+    background-color: #9012FF;
+    color: #30DAA9;
+    font-size: 50px;
+}
+
+button:hover {
+    background-color: #FF00F3;
+    color: white;
+}
+
+#Home {
+    margin-left: 20%;
+}
