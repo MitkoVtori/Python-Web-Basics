@@ -1,0 +1,17 @@
+body {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+tbody, tfoot {
+    text-align: right;
+}
