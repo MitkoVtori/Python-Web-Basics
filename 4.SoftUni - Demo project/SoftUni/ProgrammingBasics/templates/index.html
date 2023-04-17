@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SoftUni</title>
+    <style>
+
+        html {
+            background-color: #FACE6F;
+        }
+
+        .nav {
+            background-color: #5286FF;
+            text-align: center;
+            position: fixed;
+            margin: 0;
+            top: 0;
+            z-index: 999;
+            height: 85px;
+            width: 100%;
+        }
+
+        .nav #btn {
+            border: none;
+            background-color: #5286FF;
+            color: white;
+            font-size: 65px;
+        }
+
+        .Courses {
+            background: #BD9FF1;
+            overflow: hidden;
+            line-height: 1250%;
+            font-size: 145%;
+            text-align: center;
+            transition: all .3s ease-in-out;
+            height: 0;
+        }
+
+     .Courses:target {
+        height: 300px;
+     }
+
+    #basics {
+        color: #FFC100;
+        font-size: 75px;
+    }
+
+    .about-softuni {
+        left: 50%;
+        top: 50%;
+        margin-left: 500px;
+        margin-top: 50px;
+    }
+
+    #part-1 {
+        background: #FAF5F5;
+        position: fixed;
+        border: 5px solid black;
+        color: #4A4242;
+        font-size: 200%;
+        z-index: 997;
+    }
+
+    #part-2 {
+        background: #FAF5F5;
+        position: absolute;
+        border: 5px solid black;
+        color: #4A4242;
+        font-size: 35px;
+        left: 50%;
+        top: 50%;
+        margin-left: -500px;
+        margin-top: 550px;
+        z-index: 999;
+    }
+
+    .certificates {
+        background: black;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -500px;
+        margin-top: 550px;
+        z-index: 998;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 150px;
+        color: white;
+        padding-top: 1500px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a id="url" href="#"><button id="btn">Courses ⇓</button></a>
+        <script>
+            const url = document.getElementById('url');
+
+            url.addEventListener('click', function handleClick() {
+              const initialUrl = '#ShowCourses';
+
+              if (url.href.toLowerCase().includes(initialUrl.toLowerCase())) {
+                url.href = './';
+              } else {
+                url.href = initialUrl;
+              }
+            });
+        </script>
+        <script>
+            const btn = document.getElementById('btn');
+
+            btn.addEventListener('click', function handleClick() {
+              const initialText = 'Courses ⇓';
+
+              if (btn.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+                btn.textContent = 'Courses ⇑';
+              } else {
+                btn.textContent = initialText;
+              }
+            });
+        </script>
+    </div>
+    <div class="Courses" id="ShowCourses"><a id="basics" href="Programming-basics/5432/course">Programming basics</a></div>
+    <div class="about-softuni">
+        <section id="about">
+            <p id="part-1">
+                &nbsp;&nbsp;SoftUni organizes the most in-depth
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;professional software and QA engineering programs in
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bulgaria, providing students with the opportunity
+                <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to acquire the profession of "software engineer"
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;or "automated software testing engineer".
+                <br>
+                <br>
+                &nbsp;SoftUni's software and QA engineering programs
+                <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;are carefully developed with the direct involvement
+                <br>
+                &nbsp;&nbsp;&nbsp;of companies from the IT sector,
+                <br>
+                <br>
+                &nbsp;&nbsp;including working with the latest software technologies
+                <br>
+                &nbsp;&nbsp;and learning best practices
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;in the field of programming and software testing.
+            </p>
+            <p id="part-2">
+                Apart from professional software and QA engineering programs,
+                <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;SoftUni organizes a number of courses on various IT
+                <br>
+                <br>
+                &nbsp;&nbsp;and digital topics such as system administration,
+                <br>
+                <br>
+                &nbsp;artificial intelligence, cyber security, robotics and many more.
+            </p>
+            <br>
+        </section>
+    </div>
+    <div class="certificates">
+        <h3>&nbsp;&nbsp;&nbsp;Certificates&nbsp;&nbsp;</h3>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {% load static %} <img width="775" src="{% static "images/PythonOOP.jpeg" %}" alt="Python OOP Certificate" />
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {% load static %} <img width="775" src="{% static "images/Advanced.png" %}" alt="Python Advanced Certificate" />
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {% load static %} <img width="775" src="{% static "images/Fund.png" %}" alt="Python Fundamentals Certificate" />
+        <section id="free-space">
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+        </section>
+    </div>
+</body>
+</html>
