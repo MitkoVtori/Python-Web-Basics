@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programming Basics</title>
+    <style>
+
+        body{text-align:center;}
+
+        .programming-basics {
+            background: #2265F3;
+            float:left;
+            width: 100%;
+            font-size: 35px;
+            text-shadow: 2px 4px 4px #484640;
+        }
+
+        .programming-basics button {
+            background: #2265F3;
+            border: none;
+            color: white;
+            text-shadow: 2px 4px 4px #ADAAA5;
+        }
+
+        .programming-basics p {
+            color: white;
+            font-size: 25px;
+        }
+
+        .course {
+            padding-top: 475px;
+            padding-bottom: 95px;
+            text-align: center;
+        }
+
+        button {
+            background: #F8B349;
+            width: 850px;
+            height: 75px;
+            font-size: 45px;
+            color: #494743;
+        }
+
+        article {
+            background: #F6F5F1;
+            border: 1px solid #D5D4D3;
+            overflow: hidden;
+            line-height: 200%;
+            margin-left: 27%;
+            width: 850px;
+            margin: 0 auto;
+            text-align: center;
+            transition: all .5s ease-in-out;
+            height: 0;
+        }
+
+        article:target {
+            height: 300px;
+        }
+
+        #lesson-1431:target {
+            height: 180px;
+        }
+
+        #lesson-1432:target {
+            height: 275px;
+        }
+
+        #lesson-1434:target {
+            height: 400px;
+        }
+
+        #lesson-1435:target {
+            height: 400px;
+        }
+
+        #lesson-1436:target {
+            height: 145px;
+        }
+
+        .description {
+            margin-top: 5%;
+            font-size: 25px;
+        }
+
+        #no-courses {
+            font-size: 50px;
+        }
+
+        .end {
+            background: #FDBF43;
+        }
+
+        .end h1, h3 {
+            color: #F7F5F3;
+            text-shadow: 2px 4px 4px #484640;
+        }
+
+        .end p {
+            text-shadow: 5px -1px 5px #49EEFF;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="programming-basics">
+        <h1><a href="https://softuni.bg/courses/programming-basics"><button><u>Programming basics {% load static %} <img width="35" src="{% static "images/link-symbol.png" %}" alt="url image" /></u></button></a></h1>
+        <p>
+            The "Programming Basics" course provides the initial programming skills required for all technology
+            <br>
+            majors in Software University. This includes writing initial programming code (basic programming skills),
+            <br>
+            working with a development environment (IDE), using variables and data, operators and expressions, working with
+            <br>
+            the console (reading input and printing results), using conditionals constructs (if, if-else)
+            <br>
+            and loops (for, while, do-while).
+        </p>
+    </div>
+    <div class="course">
+        {% if lectures_list %}
+        {% for lecture in lectures_list %}
+        <a href="#lesson-143{{forloop.counter}}"><button class="btn">{{ lecture.Index }}. {{ lecture.Title }}&nbsp;+</button></a>
+        <article id="lesson-143{{forloop.counter}}">
+            <p class="description">{{ lecture.Description|safe }}</p>
+            <p class="resources">{{ lecture.Resources|safe }}</p>
+        </article>
+        {% endfor %}
+        {% else %}
+        <p id="no-courses">There are no courses!</p> 404
+        {% endif %}
+    </div>
+    <div class="end">
+        <h1>GitHub MIT License</h1>
+        <h3>
+            Permission is hereby granted, free of charge, to any person obtaining a copy<br>
+            of this software and associated documentation files (the "Software"), to deal<br>
+            in the Software without restriction, including without limitation the rights<br>
+            to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br>
+            copies of the Software, and to permit persons to whom the Software is<br>
+            furnished to do so, subject to the following conditions:<br>
+            <br>
+            The above copyright notice and this permission notice shall be included in all<br>
+            copies or substantial portions of the Software.<br>
+            <br>
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br>
+            IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br>
+            FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br>
+            AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br>
+            LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br>
+            OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE<br>
+            SOFTWARE.<br>
+        </h3>
+        <p>Copyright © 2023 MitkoVtori. Photos by MitkoVtori.</p>
+        <p>{% load static %} <img width="15" src="{% static "images/license.png" %}" alt="police" /> MIT License</p>
+    </div>
+</body>
+</html>
