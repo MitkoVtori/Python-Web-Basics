@@ -14,7 +14,6 @@ def index(request):
         'empty': '',
         'not_empty': '1',
         'colleagues': ["Steve", "Josh", "Gorge", "Peter 2.", "Sam"],
-        'url': 'https://github.com',
         'nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     }
 
