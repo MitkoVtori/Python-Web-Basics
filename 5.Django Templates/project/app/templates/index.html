@@ -1,0 +1,72 @@
+{% extends 'base/base.html' %}
+{% load even_nums %}
+{% load article %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}App{% endblock %}</title>
+</head>
+<body>
+{% block content %}
+    {% include 'includes/nav-bar.html' %}
+    <br>
+    <h1>Employee names: {{ first_name }} {{ last_name }}</h1>
+    <h2>Age: {{ Age }}</h2>
+    <h3>Floated Age: {{ Age|floatformat:2 }}</h3>
+    <h3>Job: {{ Job }}</h3>
+    <h4>Name length: {{ first_name|length }}</h4>
+    <p>Truncated characters from first name: {{ first_name|truncatechars:4 }}</p>
+    <p>Joined names: {{ three_names|join:"" }}</p>
+    <p>First two words: {{ words|truncatewords:2 }}</p>
+    <p>Date: {{ date|date:'D-m-Y' }}</p>
+    <p>{{ empty|default:"nothing" }}</p>
+    <p>{{ not_empty|default:"for sure there's nothing" }}</p>
+    <br>
+    {% if colleagues %}
+    <h5>Number of colleagues: {{ colleagues|length }}</h5>
+    <h5>Colleagues: {{ colleagues }}</h5>
+    {% else %}
+    <h5>No colleagues</h5>
+    {% endif %}
+    {% if empty %}
+    <h5>Some</h5>
+    <h5>Some</h5>
+    {% else %}
+    <h5>Empty</h5>
+    {% endif %}
+    {% if first_name and empty or not_empty %}
+    <p>{{ first_name }}</p>
+    {% endif %}
+    {% if colleagues|length > 3 %}
+    <h1>Yes</h1>
+    {% endif %}
+    {% if "I" in words %}
+    <h3>I is in words</h3>
+    {% endif %}
+    {% if empty != not_empty %}
+    <p>True</p>
+    {% endif %}
+    {% for c in colleagues %}
+    <p>{{ c }} {{ c|length }}</p>
+    {% endfor %}
+    {# This is an example of #}
+    {% comment %}
+    Multi
+    -
+    line
+    comment
+    {% endcomment %}
+    <div>
+        Original: {{ nums }}
+    </div>
+    <div>
+        Even: {{ nums|even }}
+    </div>
+    <div>
+        {% articles %}
+    </div>
+{% endblock %}
+</body>
+</html>
