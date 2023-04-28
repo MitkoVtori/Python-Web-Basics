@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="static/changeColor.js"></script>
+</head>
+<body>
+    <img src="static/images/some.png">
+    <button id="btn" onclick="changeColor()">Change color</button>
+    {% for contact in contacts %}
+    <h1>{{ contact.name }}</h1>
+    <h2>{{ contact.phone }}</h2>
+    {% endfor %}
+</body>
+</html>
