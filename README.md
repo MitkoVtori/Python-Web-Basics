@@ -7,3 +7,4 @@
 | <a href="4.SoftUni - Demo project">SoftUni</a> | <a href="4.SoftUni - Demo project">SoftUni</a> | <a href="3.URLs and Views">URLs and Views</a> | <a href="5.Django Templates">Django Templates</a> |
 | | | <a href="4.SoftUni - Demo project">SoftUni</a> | |
 | | | <a href="5.Django Templates">Django Templates | |
+| | | <a href="6.templates_practice_demo">templates demo</a> | |
