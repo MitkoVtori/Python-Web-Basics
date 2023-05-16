@@ -10,7 +10,3 @@ urlpatterns = (
         path('delete/', delete_pet, name='delete pet'),
     ]))
 )
-
-'''
-https://softuni.bg/trainings/3858/python-web-basics-september-2022
-'''
