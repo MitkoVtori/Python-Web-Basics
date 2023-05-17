@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Developers</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+<body>
+ <h1>Hello, there!</h1>
+ {% for dev in developers %}
+ <a href="{% url 'home' %}">Go Home</a>
+ <h3>{{ dev.first_name }}</h3>
+<h3>{{ dev.second_name }}</h3>
+{% endfor %}
+</body>
+</html>
