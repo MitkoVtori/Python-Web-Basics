@@ -1,0 +1,20 @@
+h1 {
+    position: absolute;
+    color: green;
+    top: 25%;
+    left: 35%;
+    font-size: 150px;
+}
+
+p {
+    position: absolute;
+    top: 57%;
+    left: 45%;
+}
+
+a {
+    position: absolute;
+    color: lightblue;
+    top: 60%;
+    left: 48%;
+}
