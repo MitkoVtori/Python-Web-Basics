@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Developer</title>
+</head>
+<body>
+    <form action="{% url 'update' developer_id %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Edit</button>
+    </form>
+</body>
+</html>

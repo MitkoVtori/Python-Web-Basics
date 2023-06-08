@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Developers list</title>
+</head>
+<body>
+    {% for dev in developers %}
+    <p>{{ dev.first_name }} {{ dev.last_name }} {{ dev.developer_id }}</p>
+    {% endfor %}
+</body>
+</html>
