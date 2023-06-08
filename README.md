@@ -7,6 +7,7 @@
 | <a href="4.SoftUni - Demo project">SoftUni</a> | <a href="4.SoftUni - Demo project">SoftUni</a> | <a href="3.URLs and Views">URLs and Views</a> | <a href="5.Django Templates">Django Templates</a> |
 | <a href='7.Workshop'>Workshop - Petstagram</a> | <a href='7.Workshop'>Workshop - Petstagram</a> | <a href="4.SoftUni - Demo project">SoftUni</a> | <a href='7.Workshop'>Workshop - Petstagram</a> |
 | <a href="8.Django Forms - Part 1">Django Forms - Part 1</a> | | <a href="5.Django Templates">Django Templates | <a href="8.Django Forms - Part 1">Django Forms - Part 1</a> |
-| | | <a href="6.templates_practice_demo">templates demo</a> | |
+| <a href="9.Django Forms - Part 2">Django Forms - Part 2</a> | | <a href="6.templates_practice_demo">templates demo</a> | |
 | | | <a href='7.Workshop'>Workshop - Petstagram</a> | |
 | | | <a href="8.Django Forms - Part 1">Django Forms - Part 1</a> | |
+| | | <a href="9.Django Forms - Part 2">Django Forms - Part 2</a> | |
