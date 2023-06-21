@@ -15,7 +15,6 @@ def add_album(request):
 
 def album_details(request, id):
     album = Album.objects.get(id=id)
-    album.price = f'{album.price:.2f}'
     return render(request, "album-details.html", {"album": album})
 
 
