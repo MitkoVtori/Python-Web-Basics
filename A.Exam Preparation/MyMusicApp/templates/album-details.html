@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load filters %}
+
+{% block content %}
+<!--Details Page-->
+<section id="detailsPage">
+    <div class="wrapper">
+
+        <div class="albumCover">
+            <!-- Album Image -->
+            <img src="{{ album.image_url }}" alt="Cover Image">
+        </div>
+
+        <div class="albumInfo">
+
+            <div class="albumText">
+                <!-- Album Info -->
+                <h1>Name: {{ album.album_name }}</h1>
+                <h3>Artist: {{ album.artist }}</h3>
+                <h4>Genre: {{ album.genre }}</h4>
+                <h4>Price: ${{ album.price|decimal }}</h4>
+                {% if album.description %}
+                <p>Description: {{ album.description }}</p>
+                {% endif %}
+            </div>
+
+            <div class="actionBtn">
+                <!-- Album Buttons -->
+                <a href="{% url 'edit album' album.id %}" class="edit">Edit</a>
+                <a href="{% url 'delete album' album.id %}" class="remove">Delete</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}
