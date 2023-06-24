@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main>
+
+        <!-- Create Profile Form -->
+        <section id="register">
+            <div class="form">
+                <h2>Create Profile</h2>
+                <form action="{% url 'create profile' %}" class="register-form" method="post">
+
+                    {% csrf_token %}
+                    {{ form }}
+
+                    <button type="submit">Create</button>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+{% endblock %}
