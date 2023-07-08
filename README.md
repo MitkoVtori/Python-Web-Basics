@@ -1,5 +1,12 @@
 # Python Web Basics
 
+<details>
+  <summary>👀 Show certificate</summary>
+  
+<img width="500" src="https://github.com/MitkoVtori/Python-Web-Basics/assets/112943652/a54167fe-cc7e-46bd-86a3-b105137fc441">
+</details>
+
+
 | projects | sites | demos | else |
 | -------- | ----- | ----- | ---- |
 | <a href="2.Django-Introduction">Django Introduction</a> | <a href="0.HTML & CSS Mini Course/Workshop">HTML & CSS Workshop</a> | <a href="1.PostgreSQL-Introduction/PostgreSQL.sql">SQL</a> | <a href="0.HTML & CSS Mini Course">HTML & CSS</a> |
