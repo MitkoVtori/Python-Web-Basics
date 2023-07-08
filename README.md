@@ -3,7 +3,7 @@
 <details>
   <summary>👀 Show certificate</summary>
   
-<a href="https://softuni.bg/certificates/details/177824/5ff0708e"><img width="500" src="https://github.com/MitkoVtori/Python-Web-Basics/assets/112943652/a54167fe-cc7e-46bd-86a3-b105137fc441"></a>
+<img width="500" src="https://github.com/MitkoVtori/Python-Web-Basics/assets/112943652/a54167fe-cc7e-46bd-86a3-b105137fc441">
 </details>
 
 
